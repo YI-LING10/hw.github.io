@@ -1,0 +1,103 @@
+body{
+background-image: url(image/bg1.png);
+background-size: cover;
+}
+section.part1 .card-img-overlay{
+opacity: 0;
+transition: all 200ms ease-in-out;
+text-align: center;
+font-size: 40px;
+}
+section.part1 .card-img-overlay:hover {
+opacity: 1;
+background-color: rgb(0,0,0,0.9);
+color: white;
+}
+
+section.part2 .side img{
+	width: 0px;
+	transition: 0.3s;
+}
+section.part2 .side p{
+	transition: 0.3s;
+}
+section.part2 .side p:hover+img{
+    width: 75px;
+}
+
+.container{
+  border: solid 3px pink;
+  padding: 20px;
+  border-radius:20px;
+}
+h1,h2,h3,p{
+	font-family: 微軟正黑體;
+}
+li{
+	font-family: 微軟正黑體;
+	font-size: 20px;
+	padding: 10px;
+}
+section.part3 img{
+	border-radius:10px;
+}
+section.part2 p{
+	font-size: 25px;
+}
+section.part4 .side p{
+	font-size: 20px;
+}
+h2{
+	font-weight: bold;
+	color: #77625C;
+}
+h1{
+	font-weight: bold;
+}
+section.part4 .col-md-2 img{
+	width: 11rem;
+	height: 11rem;
+}
+section.part3 img:hover{
+    transform:scale(1.1,1.1);
+    transition: 0.2s;
+}
+section.part1 .move:hover{
+    transform:scale(1.2,1.2);
+    transition: 0.2s;
+}
+aside img{
+	width: 50px;
+	height: 50px;
+}
+aside p{
+	font-size: 15px;
+}
+section.part4 p{
+	text-align: center;
+	font-weight: bold;
+}
+
+
+.logo{
+	animation: move 0.5s infinite;
+}
+@keyframes move {
+    0% {
+      transform: rotate(10deg);
+    }
+  
+    25% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(-10deg);
+    }
+    75% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(10deg);
+    }
+  }
+}
