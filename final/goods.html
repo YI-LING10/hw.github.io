@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="icon" href="image/logo.ico" type="image/x-icon" / >
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+		<title>商品介紹</title>
+		<!-- jquery -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+		<!-- Font Awesome Icon Library -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="assets/js/inputnum.js"></script>
+		<script src="assets/js/goods.js"></script>
+		<script src="assets/js/goodsbtn.js"></script>
+		<style>
+		@import url(assets/css/star.css);
+		@import url(assets/css/goods.css);
+		@import url(assets/css/final.css);
+		@import url(assets/css/text.css);
+		</style>
+	</head>
+	<body>
+		<!-- 導覽欄 -->
+		<div class="top">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-between">
+				<a class="navbar-brand" href="index.html"><img src="image/image0.png" alt=""></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto mr-auto" style="align-items: center;">
+						<li class="nav-item">
+							<a class="nav-link" href="act1.html">優惠活動</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="act2.html">最新消息</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								全部商品
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="goodsall.html">全部</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="goods1.html">筆</a>
+								<a class="dropdown-item" href="goods2.html">筆記本</a>
+								<a class="dropdown-item" href="goods3.html">便利貼</a>
+								<a class="dropdown-item" href="goods4.html">筆袋</a>
+								<a class="dropdown-item" href="goods5.html">其他</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								會員專區
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="member.html">基本資料</a>
+								<a class="dropdown-item" href="collect.html">我的收藏</a>
+								<a class="dropdown-item" href="shoppingcar.html">購物車</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">關於我們</a>
+						</li>
+					</ul>
+					<form class="form-inline my-2 my-lg-0 mr-0">
+						<ul  class="navbar-nav mr-0 list-group-horizontal">
+							<li class="nav-item">
+								<a class="nav-link" href="member.html"><img src="image/image2.png" alt=""></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="shoppingcar.html"><img src="image/image3.png" alt=""></a>
+							</li>
+						</ul>
+					</form>
+				</div>
+			</nav>
+		</div><br>
+		<!-- 商品介紹 -->
+		<div class="container">
+			<div class="row ml-5">
+				<div class="col-md-6">
+					<div class="container">
+						<div class="mySlides" style="display: block;">
+							<div class="numbertext">1 / 6</div>
+							<img src="image/good1.jpg" style="width:100%">
+						</div>
+						<div class="mySlides" style="display: none;">
+							<div class="numbertext">2 / 6</div>
+							<img src="image/good2.jpg" style="width:100%">
+						</div>
+						<div class="mySlides" style="display: none;">
+							<div class="numbertext">3 / 6</div>
+							<img src="image/good3.jpg" style="width:100%">
+						</div>
+						
+						<div class="mySlides" style="display: none;">
+							<div class="numbertext">4 / 6</div>
+							<img src="image/good4.jpg" style="width:100%">
+						</div>
+						<div class="mySlides" style="display: none;">
+							<div class="numbertext">5 / 6</div>
+							<img src="image/good5.jpg" style="width:100%">
+						</div>
+						
+						<div class="mySlides" style="display: none;">
+							<div class="numbertext">6 / 6</div>
+							<img src="image/goodall.jpg" style="width:100%">
+						</div>
+						
+						<a class="prev" onclick="plusSlides(-1)">❮</a>
+						<a class="next" onclick="plusSlides(1)">❯</a>
+						<div class="caption-container">
+							<p id="caption"></p>
+						</div>
+						<div class="row">
+							<div class="column">
+								<img class="demo cursor" src="image/good1.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+							</div>
+							<div class="column">
+								<img class="demo cursor" src="image/good2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+							</div>
+							<div class="column">
+								<img class="demo cursor" src="image/good3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+							</div>
+							<div class="column">
+								<img class="demo cursor" src="image/good4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+							</div>
+							<div class="column">
+								<img class="demo cursor" src="image/good5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+							</div>
+							<div class="column">
+								<img class="demo cursor" src="image/goodall.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+							</div>
+						</div>
+					</div>
+					<br>
+					<p>分享到</p>
+					<a href="" title=""><img src="image/image4.png" alt="" style="width: 50px; height:50px;"></a>
+					<a href="" title=""><img src="image/image5.png" alt="" style="width: 50px; height:50px;"></a>
+					<a href="" title=""><img src="image/image6.png" alt="" style="width: 50px; height:50px;"></a>
+				</div>
+				<div class="col-md-6">
+					<h2>商品名稱</h2><br>
+					<h3>NT$</h3><br>
+					<form>
+						<div class="form-row">
+							<p>數量</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<input id="min" name="" type="button" value="-" style=" width:30px; float: left;" />
+							<input id="text_box" name="" type="text" value="1" style=" width:30px;text-align: center; float: left;" />
+							<input id="add" name="" type="button" value="+" style=" width:30px; float: left;" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<p>庫存</p>
+						</div>
+					</form><br><br>
+					<button type="button" class="btn btn-outline-info mt-1 col-md-4">加入購物車</button><br><br>
+					<button type="button" class="btn btn-outline-danger mt-1 col-md-4"><img src="image/love2.png" alt="" style="width: 20px; height:20px;">&nbsp;&nbsp;&nbsp;加入我的最愛</button>
+				</div>
+			</div>
+			<hr>
+			<h3>商品描述</h3>
+			<p></p><br>
+			<hr>
+			<ul class="nav nav-tabs" id="pmyTab" role="tablist">
+				<li class="nav-item">
+					<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><span class="check">商品評論</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><span class="check">留言板</span></a>
+				</li>
+			</ul>
+			<div class="tab-content" id="myTabContent">
+				<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"><br>
+					<div class="row">
+						<div class="col-md-1">
+							<img src="image/image1.png" style="width:50px; height:50px; border-radius: 25px;">
+						</div>
+						<div class="col-md-11 my-auto">
+							<p>暱稱</p>
+							<div>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+							</div>
+							<p>商品名稱</p>
+							<p>留言內容</p>
+							<p>時間</p>
+						</div>
+					</div><hr>
+					<div class="row">
+						<div class="col-md-1">
+							<img src="image/image1.png" style="width:50px; height:50px; border-radius: 25px;">
+						</div>
+						<div class="col-md-11 my-auto">
+							<p>暱稱</p>
+							<div>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+							</div>
+							<p>商品名稱</p>
+							<p>留言內容</p>
+							<p>時間</p>
+						</div>
+					</div><hr>
+					<div class="row justify-content-end">
+						<div class="col-md-auto">
+							<nav aria-label="Page navigation example">
+								<ul class="pagination">
+									<li class="page-item">
+										<a class="page-link" href="#" aria-label="Previous">
+											<span aria-hidden="true">&laquo;</span>
+										</a>
+									</li>
+									<li class="page-item">
+										<a class="page-link" href="#" aria-label="Previous">
+											<span aria-hidden="true">&lt;</span>
+										</a>
+									</li>
+									<li class="page-item"><a class="page-link" href="#">1</a></li>
+									<li class="page-item"><a class="page-link" href="#">2</a></li>
+									<li class="page-item"><a class="page-link" href="#">3</a></li>
+									<li class="page-item">
+										<a class="page-link" href="#" aria-label="Next">
+											<span aria-hidden="true">&gt;</span>
+										</a>
+									</li>
+									<li class="page-item">
+										<a class="page-link" href="#" aria-label="Next">
+											<span aria-hidden="true">&raquo;</span>
+										</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<div class="col-md-1"></div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"><br>
+					<form action="" class="form-container" method="post">
+						<p>商品名稱</p><br>
+						<div class="form-row align-items-center">
+							<p style="vertical-align: middle;">你好!</p>&nbsp;&nbsp;
+							<a href="registered_again.html"><button type="button" class="btn btn-info">登入</button></a>
+						</div><br>
+						<p>評分</p>
+						<div class="rating">
+							<input type="radio" id="star5" name="rating" value="5" hidden/>
+							<label for="star5"></label>
+							<input type="radio" id="star4" name="rating" value="4" hidden/>
+							<label for="star4"></label>
+							<input type="radio" id="star3" name="rating" value="3" hidden/>
+							<label for="star3"></label>
+							<input type="radio" id="star2" name="rating" value="2" hidden/>
+							<label for="star2"></label>
+							<input type="radio" id="star1" name="rating" value="1" hidden/>
+							<label for="star1"></label>
+						</div><br>
+						<div class="form-inline">
+							<div class="form-group">
+								<label>評論</label>&nbsp;&nbsp;&nbsp;
+								<textarea class="form-control" id="validationTextarea" name="content" placeholder="歡迎留言~" required style="width: 1000px;"></textarea>
+							</div>
+						</div><br>
+						<div class="row justify-content-end">
+							<button type="submit" class="btn btn-info">送出</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div><br>
+		<!-- footer -->
+		<div class="foot">
+			<div class="container-fluid">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<br>
+							<h2><b>服務專線</b></h2>
+							<h2><b>0800-056-868</b></h2>
+							<p>	客服時間/週一~週五10:00-12:00，13:00~17:00<br>
+								客服信箱/   @gmail.com<br>
+							客服電話/0800-056-868</p>
+							<a href=""><img src="image/image4.png"></a>&nbsp;&nbsp;
+							<a href=""><img src="image/image6.png" alt=""></a>&nbsp;&nbsp;
+							<a href=""><img src="image/image5.png"></a><br><br>
+							<p>Copyright &copy; 2019 All Rights Reserved Design By MEOW</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous"></script>
+	</body>
+</html>
