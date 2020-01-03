@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="icon" href="image/logo.ico" type="image/x-icon" / >
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<title></title>
+		<script src="assets/js/pass.js"></script>
+	</head>
+	<body>
+		<div class="container-fluid px-0">
+			<div class="row">
+				<div class="col-sm-12">
+					<table class="table table-dark my-0">
+						<tbody>
+							<tr>
+								<td>
+									<p>&nbsp;&nbsp;&nbsp;管理者系統</p>
+								</td>
+								<td>
+									<form class="form-inline my-2 my-lg-0">
+										<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+										<button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+									</form>
+								</td>
+								<td class="float-right">
+									<form>
+										<button class="btn btn-outline-info" type="button" data-toggle="modal" data-target="#exampleModal2">刪除</button>
+									</form>
+								</td>
+								<td class="float-right">
+									<form>
+										<button class="btn btn-outline-info" type="button" data-toggle="modal" data-target="#exampleModal3">修改</button>
+									</form>
+								</td>
+								<td class="float-right">
+									<!-- Button trigger modal -->
+									<form>
+										<button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#exampleModal">
+										+新增
+										</button>
+									</form>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<!-- Modal -->
+					<form  name="form1" method="POST" action="test.jsp" class="needs-validation" novalidate>
+						<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel">新增管理員</h5>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body">
+										<form>
+											<div class="form-group">
+												<label for="exampleInputNum">管理員編號:</label>
+												<input type="text" class="form-control" id="exampleInputNum" name="" required>
+											</div><br>
+											<div class="form-group">
+												<label for="exampleInputName">管理員名稱:</label>
+												<input type="text" class="form-control" id="exampleInputName" name="name" required>
+											</div><br>
+											<div class="form-group">
+												<label for="exampleInputAccount">管理員帳號:</label>
+												<input type="text" class="form-control" id="exampleInputAccount" name="manName" required>
+											</div><br>
+											<div class="form-group">
+												<label for="exampleInputPassword">管理員密碼:</label>
+												<input type="password" class="form-control" id="exampleInputPassword" name="manPassword" required>
+											</div><br>
+											<div class="form-group">
+												<label for="exampleInput">驗證碼:</label>
+												<input type="password" class="form-control" id="exampleInput" name="verCode" aria-describedby="Help" style="width: 100px;" required>
+												<small id="Help" class="form-text text-muted">(驗證碼正確才能進行修改)</small>
+											</div>
+										</div>
+										<div class="modal-footer">
+											<button type="submit" class="btn btn-info">送出</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</form>
+					<!-- Modal2 -->
+					<form  name="form1" method="POST" action="test1.jsp" class="needs-validation" novalidate>
+						<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel">刪除管理員</h5>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body">
+										<form>
+											<div class="form-group">
+												<label for="exampleInputName">管理員名稱:</label>
+												<input type="text" class="form-control" id="exampleInputName" name="name" required>
+											</div><br>
+											<div class="form-group">
+												<label for="exampleInput">驗證碼:</label>
+												<input type="password" class="form-control" id="exampleInput1" name="verCode" aria-describedby="Help" style="width: 100px;" required>
+												<small id="Help" class="form-text text-muted">(驗證碼正確才能進行修改)</small>
+											</div>
+										</form>
+									</div>
+									<div class="modal-footer">
+										<button type="submit" class="btn btn-info">送出</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+					<!-- Modal3 -->
+					<form  name="form1" method="POST" action="test2.jsp" class="needs-validation" novalidate>
+						<div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel">更改管理員資料</h5>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body">
+										<form>
+											<div class="form-group">
+												<label for="exampleInputNum">管理員編號:</label>
+												<input type="text" class="form-control" id="exampleInputNum" name="" required>
+											</div><br>
+											<div class="form-group">
+												<label for="exampleInputName">管理員名稱:</label>
+												<input type="text" class="form-control" id="exampleInputName" name="name" required>
+											</div><br>
+											<div class="form-group">
+												<label for="exampleInputPassword">修改密碼:</label>
+												<input type="password" class="form-control" id="exampleInputPassword" name="manPassword" required>
+											</div><br>
+											<div class="form-group">
+												<label for="exampleInput">驗證碼:</label>
+												<input type="password" class="form-control" id="exampleInput2" name="verCode" aria-describedby="Help" style="width: 100px;" required>
+												<small id="Help" class="form-text text-muted">(驗證碼正確才能進行修改)</small>
+											</div>
+										</form>
+									</div>
+									<div class="modal-footer">
+										<button type="submit" class="btn btn-info">送出</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+					<!-- 後臺可自行更改欄數 -->
+					<table class="table">
+						<thead class="thead-light">
+							<tr>
+								<th >#</th>
+								<th></th>
+								<th>管理員編號</th>
+								<th>管理員名稱</th>
+								<th>管理員帳號</th>
+								<th>管理員密碼</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<form>
+									<th>1</th>
+									<td>
+										<input type="checkbox">
+									</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</form>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	</body>
+</html>

@@ -1,0 +1,29 @@
+.rating {
+        font-size: 0;
+        display: table; /*讓多個div等高與區塊內元素垂直居中*/
+    }
+
+    .rating > label {
+        color: #ddd;
+        float: right; /*第一顆 星等為1 以此類推*/
+    }
+
+    .rating > label:before {
+        padding: 5px;/*星星距離*/
+        font-size: 24px; /*星星大小*/
+        line-height: 1em; /*與上方間隔距離*/
+        display: inline-block;/*直到最左邊是空的才放一排星星 等於clear:left*/
+        content: "★";
+    }
+
+    .rating > input:checked ~ label,/*已選擇 沒移標*/
+    .rating:not(:checked) > label:hover,/*未選擇 移標上*/
+    .rating:not(:checked) > label:hover ~ label { 
+        color: #FFD700; /*星星的顏色(深)*/
+    }
+
+    .rating > input:checked ~ label:hover,/*已選擇 在該移標上*/
+    .rating > label:hover ~ input:checked ~ label,
+    .rating > input:checked ~ label:hover ~ label {
+        opacity: 0.5; /*星星的顏色(淡)*/
+    }

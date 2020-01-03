@@ -1,0 +1,30 @@
+.col-md-2 img{
+	height: 100px;
+	width: 100px;
+	transition: 1s ease;
+}
+.col-md-2 img:hover{
+	height: 120px;
+	width: 120px;
+}
+.col-md-2 a{
+	text-decoration: none;
+	color:black;
+}
+.col-md-2 a:hover{
+	color: #AAAAAA;
+}
+.col-md-10 img{
+	height: 350px;
+}
+.col-md-10 .card{
+	width: 350px;
+}
+.col-md-4 span{
+	color: #1792B5;
+	font-weight: bold;
+	font-size: 25px;
+}
+.col-md-4 p{
+	font-size: 20px;
+}

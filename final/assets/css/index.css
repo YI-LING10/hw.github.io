@@ -1,0 +1,18 @@
+.good img{
+	width: 400px;
+	height: 300px;
+}
+.good a{
+	text-decoration: none;
+	color:black;
+}
+.good a:hover{
+	color: #AAAAAA;
+}
+.ad img{
+	height: 600px;
+}
+.good img:hover{
+	transform:scale(1.3,1.3);
+    transition: 0.5s;
+}
