@@ -22,15 +22,14 @@ div.left{
 }
 .name{
 	font-size: 28px;
-	color:white;
+	color:black;
 	font-weight: bolder;
-	background-color: #DCDCDC;
-	border: 3px gray dashed;
+	background-color: #DDDDDD;
+	border: 3px #7D0000 dashed;
 }
 .t1{
 	color: 	#2F4F4F	;
 	font-weight:bold;
-	
 }
 
 .card-container {
@@ -41,18 +40,18 @@ div.left{
 .card {
   margin:10px;
   position: relative; 
-  background-color:#C0C0C0;
+  background-color:#DDDDDD;
   width:200px;
   height:50px;
   text-align: center;
-  line-height: 10px;
+  line-height: 20px;
   color:black;
   transition: all 0.6s ease;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
 .front , .back {
-  background-color:#C0C0C0;
+  background-color:#DDDDDD;
   position: absolute;
   top: 0;
   left: 0;
@@ -60,6 +59,9 @@ div.left{
   height:50px;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+}
+.back{
+	color:#7D0000;
 }
 h1 {
   margin: 0;
