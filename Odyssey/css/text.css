@@ -1,0 +1,14 @@
+p,a,td,h5,h3{
+	font-family: 微軟正黑體;
+	font-weight: bold;
+}
+.nav-link{
+	font-size: 25px;
+}
+a.more{
+	color: #7C809B;
+}
+a.more:hover{
+	color: #A7BF78;
+	text-decoration: none;
+}
